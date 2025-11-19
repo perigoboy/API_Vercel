@@ -15,6 +15,9 @@ app.use('/api/users', userRoutes);
 // health
 app.get('/api/health', (req, res) => res.json({ status: 'ok' }));
 
+app.get("/", (req, res) => {
+  res.send("API funcionando!");
+});
 
 module.exports = app;
 
